@@ -1,0 +1,406 @@
+/*==========================================*/
+/* CSS Document */
+/*
+  Template Name: Sail 
+  Description: Sail - Modern Multipurpose HTML Template
+  Author: Suave Digital
+  Website: http://suavedigital.com
+*/
+/*==========================================*/
+/*
+  This file contains sass mixins
+*/
+/*==========================================*/
+/* Breakpoints */
+html, body {
+  font-family: "Open Sans", sans-serif;
+  height: 100% !important;
+  font-weight: 400;
+  color: #888888;
+  position: relative;
+  font-size: 14px;
+  line-height: 27px;
+  -webkit-font-smoothing: antialiased;
+}
+html h1, html h2, html h3, html h4, html h5, body h1, body h2, body h3, body h4, body h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin: 0px;
+  text-transform: capitalize;
+  line-height: 1.2;
+  color: #091d25;
+}
+
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: 0px;
+}
+
+/* Default Form Style */
+.def-input {
+  padding: 10px 23px 10px 8px;
+  border: 0px;
+  border: 1px solid #dadddf;
+  color: #888888;
+  height: auto;
+  line-height: inherit;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  font-family: 'Lora', sans-serif;
+  font-style: italic;
+}
+.def-input:focus {
+  outline: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid #f26936;
+}
+
+/* Default Button Style */
+.def-btn {
+  display: inline-block;
+  padding: 10px 23px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  background: #f26936;
+  color: #fff;
+  border: 0px;
+  outline: 0px;
+}
+.def-btn:hover {
+  color: #fff;
+}
+.def-btn:hover:after {
+  width: 0;
+}
+.def-btn.btn-solid {
+  color: #fff;
+}
+.def-btn.btn-solid:hover {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.def-btn.btn-outline {
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.def-btn.btn-outline:hover {
+  color: #fff;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* Section Padding Style */
+.sec-pad {
+  padding: 80px 0px;
+}
+
+.sec-pad-t {
+  padding-top: 80px;
+}
+
+.sec-pad-b {
+  padding-bottom: 80px;
+}
+
+/* No Padding Style */
+.no-padding {
+  padding: 0px;
+}
+
+.no-h-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.no-v-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.no-t-padding {
+  padding-top: 0px;
+}
+
+.no-b-padding {
+  padding-bottom: 0px;
+}
+
+.no-r-padding {
+  padding-right: 0px;
+}
+
+.no-l-padding {
+  padding-left: 0px;
+}
+
+/* Section Half Padding Style */
+.sec-h-pad {
+  padding: 40px 0px;
+}
+
+.sec-h-pad-t {
+  padding-top: 40px;
+}
+
+.sec-h-pad-b {
+  padding-bottom: 40px;
+}
+
+/* Section Half Quarter Padding Style */
+.sec-hq-pad {
+  padding: 60px 0px;
+}
+
+.sec-hq-pad-t {
+  padding-top: 60px;
+}
+
+.sec-hq-pad-b {
+  padding-bottom: 60px;
+}
+
+/* Section Quarter Padding Style */
+.sec-q-pad {
+  padding: 20px;
+}
+
+.sec-q-pad-t {
+  padding-top: 20px;
+}
+
+.sec-q-pad-b {
+  padding-bottom: 20px;
+}
+
+/* Overlay Style */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #222;
+  opacity: 0.8;
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+}
+.overlay.overlay-light {
+  background: #fff;
+}
+
+/* Underlined Title Style */
+.title-underlined {
+  position: relative;
+  padding-bottom: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.title-underlined:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background: #f26936;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 0px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+/* Vertical Align Style */
+.valign-wrap {
+  display: table;
+}
+
+.valign-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.valign-bottom {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.valign-top {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.navbar-inverse {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  background: transparent;
+  border: 0px;
+}
+.navbar-inverse .navbar-brand {
+  padding: 20px 10px;
+  padding-right: 20px;
+  background: url("../images/logo-footer.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 110px;
+  padding: 0px;
+  margin: 15px 20px;
+}
+.navbar-inverse .navbar-nav li a {
+  padding: 30px 15px;
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.navbar-inverse .navbar-nav li.active a {
+  background: none;
+}
+.navbar-inverse .navbar-nav li.active a:focus, .navbar-inverse .navbar-nav li.active a:hover {
+  background: none;
+}
+.navbar-inverse .navbar-nav li.active:hover a {
+  background: none;
+}
+.navbar-inverse .navbar-nav li.dropdown.open a {
+  background: transparent;
+  color: #f26936;
+}
+.navbar-inverse .navbar-nav li.dropdown .dropdown-menu li a {
+  color: #888888;
+  padding: 10px 15px;
+}
+.navbar-inverse .navbar-nav.navbar-right li a.call-us {
+  padding: 19px 10px;
+  position: relative;
+  padding-right: 60px;
+}
+.navbar-inverse .navbar-nav.navbar-right li span {
+  display: block;
+  text-align: right;
+  line-height: 1.5;
+}
+.navbar-inverse .navbar-nav.navbar-right li img {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  top: 15px;
+}
+.navbar-inverse.scroll-fixed-navbar {
+  background: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-brand {
+  background: url("../images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li a {
+  color: #888888;
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li a:hover {
+  color: #f26936;
+}
+.navbar-inverse.scroll-fixed-navbar .navbar-nav li.active a:hover, .navbar-inverse.scroll-fixed-navbar .navbar-nav li.active a:focus {
+  color: #f26936;
+}
+
+/* Footer Style */
+.footer {
+  background: #222;
+  border: 0px;
+}
+.footer .container .logo {
+  margin-bottom: 20px;
+}
+.footer .container .title {
+  margin-bottom: 10px;
+}
+.footer .container .title h3 {
+  color: #ccc;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.footer .container .title h3:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  height: 2px;
+  background: #444;
+  width: 50px;
+}
+.footer .container .description {
+  color: #ccc;
+  padding-right: 50px;
+}
+.footer .container .list ul li a {
+  color: #ccc;
+}
+
+/* Copyright Style */
+.copyright {
+  background: #222;
+  border: 0px;
+  padding: 0px 0px 20px;
+  color: #ccc;
+}
+.copyright .container {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+.copyright .right-section .social-media-list a {
+  display: inline-block;
+  margin-right: 5px;
+  background: #ccc;
+  width: 25px;
+  height: 25px;
+}
+.copyright .right-section .social-media-list a img {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  vertical-align: top;
+  margin: 3px;
+}
